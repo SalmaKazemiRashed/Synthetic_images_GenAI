@@ -1,2 +1,3 @@
+
 # Generative_microscopic_cells
-This repo is the cell microscopy project in which cell channels are generated from nuclei channels.
+This project is A Generative model project on high-content fluorescence microscopy project for generating cell images from nuclei channel only
