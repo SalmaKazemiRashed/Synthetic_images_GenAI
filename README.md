@@ -7,7 +7,7 @@ This project focuses on generating the cell channel of a fluorescence microscopy
 
 For this project, several UNet and GAN models were trained with different hyperparameters. To improve UNet performance, we explored advanced loss functions, learning rate schedules, and deeper network architectures. UNets were primarily used for simple image-to-image (I2I) translation tasks.
 
-### Unets
+### UNets
 
 At first try we trained a simple U-shape model which the input is nuclei images and output is cell images
 The original data is in 1104x1104 pcs format and the model input is 256x256. 
