@@ -21,13 +21,13 @@ Phase 1 - Discriminator Training: Show  the discriminator nuclei images and cell
 Phase 2 - Generator Training: The generator creates new cell images based on discriminator's feedback
 Repeat: Both keep improving against each other
 
-´´´text            
+```text            
 Noise (Random Input)
      ↓
-[ GENERATOR ] → Fake Images
+[ GENERATOR ] → Cell images
      ↓
 [ DISCRIMINATOR ] → Real/Fake Prediction
      ↓
      ↑
 [ REAL IMAGES ] → For Comparison
-´´´
+```
