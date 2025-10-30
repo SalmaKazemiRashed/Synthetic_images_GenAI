@@ -7,8 +7,27 @@ This project focuses on generating the cell channel of a fluorescence microscopy
 
 For this project, several UNet and GAN models were trained with different hyperparameters. To improve UNet performance, we explored advanced loss functions, learning rate schedules, and deeper network architectures. UNets were primarily used for simple image-to-image (I2I) translation tasks.
 
+### Unets
+
 At first try we trained a simple U-shape model which the input is nuclei images and output is cell images
 The original data is in 1104x1104 pcs format and the model input is 256x256. 
 We needed to extract patches first and feed patches to model
-![This](./src/models/UNet.py) is the simplest form of U-Net model for image to image translation
+[This](./src/models/UNet.py) is the simplest form of U-Net model for image to image translation
 Two UNet models are presented here, along with preprocessing code, model architectures, and training functions. Finally, predictions are visualized by loading the saved models.
+
+### GANs
+The Training Process:
+Phase 1 - Discriminator Training: Show  the discriminator nuclei images and cell images
+Phase 2 - Generator Training: The generator creates new cell images based on discriminator's feedback
+Repeat: Both keep improving against each other
+
+´´´text            
+Noise (Random Input)
+     ↓
+[ GENERATOR ] → Fake Images
+     ↓
+[ DISCRIMINATOR ] → Real/Fake Prediction
+     ↓
+     ↑
+[ REAL IMAGES ] → For Comparison
+´´´
