@@ -31,3 +31,16 @@ Noise (Random Input)
      ↑
 [ REAL IMAGES ] → For Comparison
 ```
+
+Discriminator Loss
+```text
+L_D = -[log(P(x)) + log(1 - P(G(z)))]
+```
+
+
+
+Generator Loss
+```text
+L_G = -[log(P(G(z)))]
+```
+
